@@ -3,4 +3,11 @@
 <h1>Home</h1>
 <p><%= homeContent %></p>
 
+<a href="/compose">Write a new Blog Post</a>
+
+<% postsList.forEach((elem) => { %>
+    <h3><%= elem.title %></h3>
+    <p><%= elem.content %></p>
+<% }) %>
+
 <%- include('partials/footer');-%>
